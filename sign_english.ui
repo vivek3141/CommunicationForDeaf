@@ -65,6 +65,24 @@
     <string/>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>551</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/newPrefix/back.jpg) 0 0 0 0 stretch stretch;</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>te</zorder>
+  <zorder>pb_trans</zorder>
+  <zorder>pb_record</zorder>
+  <zorder>label</zorder>
  </widget>
  <resources>
   <include location="resource.qrc"/>

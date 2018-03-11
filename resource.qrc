@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>back.jpg</file>
     <file>record.png</file>
   </qresource>
 </RCC>

@@ -57,6 +57,15 @@ class Ui_Dialog(object):
         self.rb_n = QtGui.QRadioButton(self.groupBox)
         self.rb_n.setObjectName(_fromUtf8("rb_n"))
         self.verticalLayout.addWidget(self.rb_n)
+        self.graphicsView = QtGui.QGraphicsView(Dialog)
+        self.graphicsView.setGeometry(QtCore.QRect(-5, -9, 521, 281))
+        self.graphicsView.setStyleSheet(_fromUtf8("border-image: url(:/newPrefix/back.jpg) 0 0 0 0 stretch stretch;"))
+        self.graphicsView.setObjectName(_fromUtf8("graphicsView"))
+        self.graphicsView.raise_()
+        self.pb_sign.raise_()
+        self.layoutWidget.raise_()
+        self.label_2.raise_()
+        self.groupBox.raise_()
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -69,6 +78,7 @@ class Ui_Dialog(object):
         self.rb_y.setText(_translate("Dialog", "Yes", None))
         self.rb_n.setText(_translate("Dialog", "No", None))
 
+import resource_rc
 
 if __name__ == "__main__":
     import sys

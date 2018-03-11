@@ -8,6 +8,8 @@ from PyQt4 import QtCore, QtGui
 with open("login.txt","r") as f:
     y = f.read()
 y.rstrip()
+with open("text.txt","w") as f:
+    f.write("")
 
 if y == "":
     app = QtGui.QApplication(sys.argv)

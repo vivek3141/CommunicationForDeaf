@@ -84,7 +84,28 @@
     <string>Remember Me</string>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>451</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/newPrefix/back.jpg) 0 0 0 0 stretch stretch;</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>le_login</zorder>
+  <zorder>label</zorder>
+  <zorder>pb_login</zorder>
+  <zorder>pb_signup</zorder>
+  <zorder>cb_r</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

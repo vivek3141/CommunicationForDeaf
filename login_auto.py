@@ -44,6 +44,16 @@ class Ui_Dialog(object):
         self.cb_r = QtGui.QCheckBox(Dialog)
         self.cb_r.setGeometry(QtCore.QRect(300, 160, 151, 25))
         self.cb_r.setObjectName(_fromUtf8("cb_r"))
+        self.graphicsView = QtGui.QGraphicsView(Dialog)
+        self.graphicsView.setGeometry(QtCore.QRect(0, 0, 451, 291))
+        self.graphicsView.setStyleSheet(_fromUtf8("border-image: url(:/newPrefix/back.jpg) 0 0 0 0 stretch stretch;"))
+        self.graphicsView.setObjectName(_fromUtf8("graphicsView"))
+        self.graphicsView.raise_()
+        self.le_login.raise_()
+        self.label.raise_()
+        self.pb_login.raise_()
+        self.pb_signup.raise_()
+        self.cb_r.raise_()
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -55,6 +65,7 @@ class Ui_Dialog(object):
         self.pb_signup.setText(_translate("Dialog", "Sign Up", None))
         self.cb_r.setText(_translate("Dialog", "Remember Me", None))
 
+import resource_rc
 
 if __name__ == "__main__":
     import sys
