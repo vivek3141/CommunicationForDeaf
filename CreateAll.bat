@@ -1,0 +1,1 @@
+pyuic4 -x *.ui > *_auto.py
