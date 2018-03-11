@@ -30,7 +30,11 @@ class Login(QtGui.QDialog):
             print(e)
         l = cur.fetchall()
         print(l)
-        y = str(l[0][0])
+        try:
+            y = str(l[0][0])
+        except IndexError:
+            QtGui.QMessageBox.warning(self, "Warning!",  "No such username!")
+            return False
         print(y)
         if self.ui.cb_r.isChecked():
             with open("login.txt","w") as f:

@@ -5,6 +5,7 @@ import classify_webcam as cw
 import login_mod
 import sign_english_mod as se
 
+
 class Detect(QtGui.QDialog):
     def __init__(self,parent=None,yes=None):
         QtGui.QWidget.__init__(self, parent) 
@@ -20,12 +21,15 @@ class Detect(QtGui.QDialog):
                 self.ui.rb1.setChecked(True)
 
     def run(self):
+        self.ui.label.setText("")
         if self.ui.rb1.isChecked():
             s = se.Sign()
             s.show()
             s.exec_()
         else:
             cw.main()
+            with open("text.txt", "r") as f:
+                self.ui.label.setText(f.read())
 
     def login(self):
         m = login_mod.Login()

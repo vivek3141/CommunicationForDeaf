@@ -42,6 +42,10 @@ class Ui_Dialog(object):
         self.pb_login = QtGui.QPushButton(Dialog)
         self.pb_login.setGeometry(QtCore.QRect(20, 20, 112, 34))
         self.pb_login.setObjectName(_fromUtf8("pb_login"))
+        self.label = QtGui.QLabel(Dialog)
+        self.label.setGeometry(QtCore.QRect(40, 300, 421, 41))
+        self.label.setText(_fromUtf8(""))
+        self.label.setObjectName(_fromUtf8("label"))
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)

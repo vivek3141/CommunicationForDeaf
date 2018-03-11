@@ -69,7 +69,10 @@ def main():
                 img_sequence = np.zeros((200,1200,3), np.uint8)
                 cv2.putText(img_sequence, '%s' % (sequence.upper()), (30,30), cv2.FONT_HERSHEY_PLAIN, 1, (255,255,255), 2)
                 cv2.imshow("Text", img_sequence)
+
                 if cv2.waitKey(1) & 0xFF == ord("q"):
+                    with open("text.txt", "w") as f:
+                        f.write(str(sequence))
                     break
             else:
                 break
